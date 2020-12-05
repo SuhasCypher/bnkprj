@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "5fcb32d75df71843a4278473"
+  },
+  "branch": "XYZ",
+  "acc_holder": "Bob Marley",
+  "acc_num": "13213514612164",
+  "acc_type": "Savings",
+  "acc_bal": "500000",
+  "phone": "95365451358",
+  "email": "bob@gmail.com",
+  "address": "New York"
+},{
+  "_id": {
+    "$oid": "5fcb341bc883bf22c42e97c4"
+  },
+  "branch": "XYZ",
+  "acc_holder": "Alice",
+  "acc_num": "13213514612155",
+  "acc_type": "Savings",
+  "acc_bal": "500000",
+  "phone": "95365451344",
+  "email": "alice@gmail.com"
+},{
+  "_id": {
+    "$oid": "5fcb3438c883bf22c42e97c5"
+  },
+  "branch": "XYZ",
+  "acc_holder": "John",
+  "acc_num": "132135146121445",
+  "acc_type": "Savings",
+  "acc_bal": "500000",
+  "phone": "953654513477",
+  "email": "john@gmail.com"
+},{
+  "_id": {
+    "$oid": "5fcb4e2d96c6c63f44bfaadc"
+  },
+  "branch": "XYZ",
+  "acc_type": "Savings",
+  "acc_holder": "Bob Marley",
+  "acc_num": "13213514612164",
+  "acc_bal": "500000",
+  "phone": "95365451358",
+  "email": "bob@gmail.com",
+  "address": "New York"
+},{
+  "_id": {
+    "$oid": "5fcb4e561174701ec8a9cc21"
+  },
+  "branch": "XYZ",
+  "acc_type": "Savings",
+  "acc_holder": "Bob Marley",
+  "acc_num": "13213514612164",
+  "acc_bal": "500000",
+  "phone": "95365451358",
+  "email": "bob@gmail.com"
+},{
+  "_id": {
+    "$oid": "5fcb53f9356c850db03e7e57"
+  },
+  "acc_type": "Savings",
+  "acc_holder": "asdg",
+  "acc_num": "53435101354651",
+  "phone": "546513",
+  "email": "sui",
+  "address": "asdfhj"
+},{
+  "_id": {
+    "$oid": "5fcb5536356c850db03e7e58"
+  },
+  "branch": "",
+  "acc_type": "",
+  "acc_holder": "",
+  "acc_num": "",
+  "acc_bal": "",
+  "phone": "",
+  "email": "",
+  "address": ""
+}]
