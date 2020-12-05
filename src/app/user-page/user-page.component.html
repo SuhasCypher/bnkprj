@@ -1,0 +1,110 @@
+<div class="nav-bar-user">
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" (click)="alertmethod()" routerLink="../home">Logout</a>
+  </li>
+  
+</ul>
+<h2>Still in development</h2>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+            <div class="card" >
+          <div class="card-body" style="height: 10rem;">
+            <h5 class="card-title">Deposit</h5>
+            <input type="number" id="withdraw-amt" [(ngModel)]="depositamt"><br>
+              <button type="button" (click)="deposit()" class="btn btn-primary" style="margin-top:10px">Deposit</button>    
+          </div>
+        </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+      <div class="card-body" style="height: 10rem;" >
+        <h5 class="card-title">Withdraw</h5>
+        <input type="number" id="withdraw-amt" [(ngModel)]="withdrawamt"><br>
+          <button type="button" (click)="withdraw()" class="btn btn-primary" style="margin-top:10px">Withdraw</button>    
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+      <div class="card-body" style="height: 10rem;">
+        <h5 class="card-title" >Total_Balance</h5>
+        <h5 style="margin-left: 20px;" *ngFor="let x of banks">{{x.savings_account.acc_balance}}$</h5> 
+      </div>
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="card">
+      <div class="card-body" style="height: 10rem;">
+        <h5 class="card-title">Add New Bank Account</h5>
+        <button type="button" (click)="withdraw()" class="btn btn-primary" style="margin-top:10px">Add Account</button>      
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="head-class">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active">Withdraw_Transaction</li>
+  </ol>
+</nav>
+
+</div>
+<div class="deposit-table">
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Description</th>
+      <th scope="col">Reference</th>
+      <th scope="col">Withdraw_Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    </tbody>
+</table>
+</div>
+<div class="head-class">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active">Deposit_Transaction</li>
+  </ol>
+</nav>
+
+</div>
+
+<div class="withdraw-table">
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Description</th>
+      <th scope="col">Reference</th>
+      <th scope="col">Deposit_Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+
+
+
+<router-outlet></router-outlet>

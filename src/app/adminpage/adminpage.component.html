@@ -1,0 +1,92 @@
+<div class="nav-bar-user">
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" (click)="alertmethod()" routerLink="../home">Logout</a>
+  </li>
+  
+</ul>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+            <div class="card" >
+          <div class="card-body" style="height: 10rem;">
+            <h5 class="card-title">Delete</h5>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button style="margin-top: 10px;" (click)="delete()" type="button" class="btn btn-primary">Delete</button>
+            
+             
+          </div>
+        </div>
+    </div>
+          
+     <div class="col-sm">
+            <div class="card" >
+          <div class="card-body" style="height: 10rem;">
+            <h5 class="card-title">Search</h5>
+                <input type="text" [(ngModel)]="acc_holder" (input)="Search()" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            
+          </div>
+        </div>
+    </div>
+       
+    <div class="col-sm">
+      <div class="card">
+      <div class="card-body" style="height: 10rem;">
+        <h5 class="card-title" >Add New Bank Account</h5>
+        <button type="button" (click)="onchange()" class="btn btn-primary">Add</button>
+       
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="head-class">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb" style="margin-top: 20px;">
+    <li class="breadcrumb-item active" >Customers</li>
+  </ol>
+</nav>
+
+</div>
+<div class="deposit-table">
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Branch</th>
+      <th scope="col">Name</th>
+      <th scope="col">Acccount_No</th>
+      <th scope="col">Acccount_Type</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let bank of banks">
+       <td>{{bank.branch}}</td>
+       <td>{{bank.acc_holder}}</td>       
+       <td>{{bank.acc_num}}</td>     
+        <td>{{bank.acc_type}}</td>  
+        <td>{{bank.phone}}</td>
+        <td>{{bank.email}}</td>  
+        <td>{{bank.address}}</td>
+     </tr>
+
+  
+     
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+<router-outlet></router-outlet>

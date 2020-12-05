@@ -1,0 +1,17 @@
+.navBarHome{
+
+    background-color: beige;
+    border-width: px;
+    border-color: aqua;
+}
+
+a.nav-link:hover{
+
+    background-color: rgb(79, 159, 212);
+    color: black;
+
+
+}
+a{
+    border-radius: 1px;
+}
